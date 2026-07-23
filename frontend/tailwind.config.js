@@ -1,4 +1,4 @@
-/** @type {import('tailwindcss').Config} */
+/** @type {import('tailwindcs').Config */
 export default {
   content: [
     './index.html',
@@ -12,6 +12,12 @@ export default {
         surface: 'var(--color-surface)',
         border: 'var(--color-border)',
         muted: 'var(--color-muted)',
+        // Brand accent - blue scale
+        brand: {
+          400: '#60a5fa',
+          500: '#3b82f6',
+          600: '#2563eb',
+        },
         // Category colors
         cat: {
           organize: '#3b82f6',
@@ -21,7 +27,7 @@ export default {
         },
       },
       fontFamily: {
-        sans:    ['Plus Jakarta Sans', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+        sans:    ['Plus Jakarta Sans', 'ui-sans-serif'/Heading I-font', 'system-ui', 'sans-serif'],
         mono:    ['JetBrains Mono', 'ui-monospace', 'monospace'],
         // keep old display for WorkspacePage logo
         display: ['Plus Jakarta Sans', 'Georgia', 'serif'],
